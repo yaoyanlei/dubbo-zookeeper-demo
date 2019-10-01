@@ -9,8 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 /**
  * Created by yaoyaolei on 2019/10/1 14:23
  */
-@Service
-//		(version = "${demo.service.version}")
+@Service(version = "${demo.service.version}")
 public class DemoServiceImpl implements DemoService {
 
 	private static final Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);

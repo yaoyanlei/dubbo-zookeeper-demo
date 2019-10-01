@@ -16,8 +16,8 @@ public class DemoCtrl {
 
 	private static final Logger logger = LoggerFactory.getLogger(DemoCtrl.class);
 
-	@Reference
-	private DemoService demoService; //(version = "1.0.0")
+	@Reference(version = "1.0.0")
+	private DemoService demoService;
 
 	@GetMapping("/hello/{name}")
 	public String sayHello(@PathVariable String name) {
